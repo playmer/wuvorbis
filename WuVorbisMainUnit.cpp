@@ -4,6 +4,7 @@
 // See details for TVP source distribution.
 //---------------------------------------------------------------------------
 
+#ifndef _WIN32
 #define _cdecl
 #define __int64 int64_t
 
@@ -968,4 +969,6 @@ extern "C" void ScaleOutput(float scale)
 #define IN_WUVORBISMAINUNIT
 #include "decapi/include/wuvorbisfile.h"
 #include "wuvorbisfile_stub.c"
+#endif
+
 #endif
